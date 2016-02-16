@@ -14,9 +14,14 @@ class InterfaceController: WKInterfaceController {
     let groupID = "group.co.dotsoft.test"
     var sharedFilePath: String?
     var sharedDefaults: NSUserDefaults?
+    @IBOutlet var imageView: WKInterfaceImage!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        // FileManager:
+        let sharedContainer = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier(groupID)
+        let dirPath = sharedContainer?.path
+        sharedFilePath = dirPath?.stringByAppendingString("test.data")
         
         // Configure interface objects here.
         loadTestData();
@@ -40,6 +45,16 @@ class InterfaceController: WKInterfaceController {
         let str = sharedDefaults?.valueForKey("test")
         print(str);
         
+        // file:
+        if NSFileManager.defaultManager().fileExistsAtPath(sharedFilePath!) {
+            let databuffer = NSFileManager.defaultManager().contentsAtPath(sharedFilePath!)
+            
+            self.imageView.setImageData(databuffer)
+
+        }else {
+            print("image file is not exist");
+        }
+
         
     }
     

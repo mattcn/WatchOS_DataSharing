@@ -20,6 +20,7 @@
 		C952B84A1C733DB2002B712E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952B8491C733DB2002B712E /* NotificationController.swift */; };
 		C952B84C1C733DB2002B712E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C952B84B1C733DB2002B712E /* Assets.xcassets */; };
 		C952B8501C733DB2002B712E /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C952B8321C733DB2002B712E /* watch.app */; };
+		C994BE5A1C734D0500B646D6 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C994BE591C734D0500B646D6 /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		C952B84B1C733DB2002B712E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C952B84D1C733DB2002B712E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C952B8591C733E4D002B712E /* watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "watch Extension.entitlements"; sourceTree = "<group>"; };
+		C994BE591C734D0500B646D6 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		C952B81A1C73387D002B712E /* watchOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				C994BE591C734D0500B646D6 /* test.png */,
 				C952B82F1C733BAD002B712E /* watchOSTest.entitlements */,
 				C952B81B1C73387D002B712E /* AppDelegate.swift */,
 				C952B81D1C73387D002B712E /* ViewController.swift */,
@@ -297,6 +300,7 @@
 				C952B8261C73387D002B712E /* LaunchScreen.storyboard in Resources */,
 				C952B8231C73387D002B712E /* Assets.xcassets in Resources */,
 				C952B8211C73387D002B712E /* Main.storyboard in Resources */,
+				C994BE5A1C734D0500B646D6 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +599,7 @@
 				C952B8531C733DB2002B712E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C952B8551C733DB2002B712E /* Build configuration list for PBXNativeTarget "watch" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +608,7 @@
 				C952B8571C733DB2002B712E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
